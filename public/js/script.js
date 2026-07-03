@@ -5,7 +5,7 @@ async function fetchStatus() {
 
         const data = result.data;
 
-        document.getElementById("status").innerText = data.status;
+        document.getElementById("status").innerHTML = "🟢 " + data.status;
         document.getElementById("hostname").innerText = data.hostname;
         document.getElementById("os").innerText = data.operatingSystem;
         document.getElementById("architecture").innerText = data.architecture;

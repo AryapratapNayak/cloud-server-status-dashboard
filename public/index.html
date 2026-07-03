@@ -13,72 +13,80 @@
 
     <div class="container">
 
-        <header>
+        <header class="header">
             <h1>☁️ Cloud Server Status Dashboard</h1>
-            <p>Real-Time System Monitoring</p>
+            <p>Real-Time Monitoring of Your Server</p>
+
+            <div class="tech-stack">
+                <span>☁️ AWS EC2</span>
+                <span>🐧 Ubuntu</span>
+                <span>🟢 Node.js</span>
+                <span>⚡ Express.js</span>
+            </div>
         </header>
 
-        <div class="dashboard">
+        <section class="dashboard">
 
             <div class="card">
-                <h3>🟢 Status</h3>
-                <p id="status">Loading...</p>
+                <h3>Server Status</h3>
+                <p id="status" class="status-badge">Loading...</p>
             </div>
 
             <div class="card">
-                <h3>💻 Hostname</h3>
+                <h3>Hostname</h3>
                 <p id="hostname">Loading...</p>
             </div>
 
             <div class="card">
-                <h3>🖥 Operating System</h3>
+                <h3>Operating System</h3>
                 <p id="os">Loading...</p>
             </div>
 
             <div class="card">
-                <h3>⚙ Architecture</h3>
+                <h3>Architecture</h3>
                 <p id="architecture">Loading...</p>
             </div>
 
             <div class="card">
-                <h3>📦 Node.js Version</h3>
+                <h3>Node.js Version</h3>
                 <p id="nodeVersion">Loading...</p>
             </div>
 
             <div class="card">
-                <h3>⏱ Uptime</h3>
+                <h3>System Uptime</h3>
                 <p id="uptime">Loading...</p>
             </div>
 
             <div class="card">
-                <h3>💾 Total Memory</h3>
+                <h3>Total Memory</h3>
                 <p id="totalMemory">Loading...</p>
             </div>
 
             <div class="card">
-                <h3>🆓 Free Memory</h3>
+                <h3>Free Memory</h3>
                 <p id="freeMemory">Loading...</p>
             </div>
 
-        </div>
+        </section>
 
-        <div class="cpu-card">
-            <h3>🧠 CPU Model</h3>
+        <section class="info-card">
+            <h3>🧠 CPU Information</h3>
             <p id="cpuModel">Loading...</p>
-        </div>
+        </section>
 
-        <div class="cpu-card">
+        <section class="info-card">
             <h3>🕒 Server Time</h3>
             <p id="serverTime">Loading...</p>
+        </section>
+
+        <div class="button-container">
+            <button id="refreshBtn">🔄 Refresh Dashboard</button>
         </div>
 
-        <button id="refreshBtn">
-            🔄 Refresh Status
-        </button>
-
         <footer>
-            <p>🚀 Hosted on AWS EC2 Ubuntu</p>
-            <p>Created by Aryapratap Nayak</p>
+            <p>🚀 Manual Deployment Project on AWS EC2</p>
+            <p>Built with Node.js, Express.js, HTML, CSS & JavaScript</p>
+            <p>Created by <strong>Aryapratap Nayak</strong></p>
         </footer>
 
     </div>
